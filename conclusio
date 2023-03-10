@@ -1,0 +1,8 @@
+Our final model is ElasticNetCV, a cross validated linear model incorporating ridge and LASSO regression with interaction terms. It looks at the characters, writers, directors, and number of lines and determines which combinations of them have significant predictive power for IMDb rating. If a factor is not useful, it is removed from the model. The result is a list of coefficients: positive values indicate that that combination of features increases IMDb rating on average, while negative coefficients decrease it.
+
+Our model has a test R^2 value near 0.5. This means that roughly 50% of the variation in IMDb rating can be explained by variation in the features chosen by the model. This is a relatively high score compared to other models in the literature, and indicates reasonably strong predictive strength. 
+
+The model chooses features in line from what we would expect given our preliminary data analysis. The largest takeaway from that was the dominant popularity of Michael’s character, as well as the highest performing writers and directors. Indeed, the single most impactful feature in the model by far is the inclusion of Michael with a high number of lines.
+
+Our recommendation for NBC universal is to make an episode written by a collaboration between Greg Daniels, Brent Forrester, and Michael Schur. All characters should be included except Erin and Ryan, with Michael given a large number of lines. Tucker Gates and Jeffrey Blitz should direct the episode.
+
